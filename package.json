@@ -4,8 +4,7 @@
   "description": "Github organization viewer",
   "main": "server.js",
   "scripts": {
-    "postinstall": "npm run build",
-    "build": "webpack -p",
+    "postinstall": "webpack -p",
     "start": "webpack-dev-server --content-base public/"
   },
   "keywords": [
