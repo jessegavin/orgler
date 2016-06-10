@@ -1,0 +1,58 @@
+/* 
+  Normally I would prefer to use SASS, LESS or css modules. 
+  Then I would break up the css files into separate modules/files.
+  
+  There is so little going on in terms of style for this demo,
+  so I am just keeping it all in here.
+ */
+
+body {
+  padding: 15px 0;
+}
+
+.panel {
+  margin-bottom: 15px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+}
+
+.panel-heading {
+  display: block;
+  padding: 8px 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #555;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #eee;
+}
+.panel-body {
+  padding: 8px 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.loading-overlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, .8);
+  justify-content: center;
+  align-items: center;
+}
+.loading-text {
+  font-size: 2rem;
+}
+
+.text-medium {
+  font-size: 1.2rem;
+}
+.text-large {
+  font-size: 1.5rem;
+}

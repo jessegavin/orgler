@@ -4,7 +4,9 @@
   "description": "Github organization viewer",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "npm run build",
+    "build": "node ./node_modules/webpack/bin/webpack -p",
+    "start": "webpack-dev-server --content-base public/"
   },
   "keywords": [
     "github"
@@ -12,10 +14,13 @@
   "author": "Jesse Gavin",
   "license": "MIT",
   "dependencies": {
-    "apicache": "0.0.14",
-    "bluebird": "^3.4.0",
-    "express": "^4.13.4",
-    "lodash": "^4.13.1",
-    "node-fetch": "^1.5.3"
+    "express": "4.13.4",
+    "lodash": "4.13.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "1.14.1"
+  },
+  "engines": {
+    "node": "4.1.1"
   }
 }
