@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "postinstall": "webpack -p",
-    "start": "webpack-dev-server --content-base public/"
+    "start": "node server.js",
+    "dev": "webpack-dev-server --content-base public/"
   },
   "keywords": [
     "github"

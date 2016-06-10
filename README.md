@@ -1,4 +1,4 @@
 # Run the app locally
 
     npm install
-    npm start
+    npm run dev
